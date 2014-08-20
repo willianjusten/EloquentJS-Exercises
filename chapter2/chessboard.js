@@ -21,20 +21,19 @@ and change the program so that it works for any size, outputting a grid of the g
 
 var string = "",
 	hash   = "#"
-	space  = " ";
+	space  = " "
+	size   = 8;
 
-for (var i = 1; i <= 8; i++) {
-	for (var j = 1; j <=8; j++){
+for (var i = 1; i <= size; i++) {
+	for (var j = 1; j <= size; j++){
 
 		if((i+j) % 2 === 0)
 			string = string + hash;
 		else
 			string = string + space;
-
-		if(j = 8)
-			string = string + "\n";
-
 	}
 
-	console.log(string);
+	string = string+ "\n";
 };
+
+console.log(string);
