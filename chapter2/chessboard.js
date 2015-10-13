@@ -30,5 +30,5 @@ for (var i = 1; i <= size; i++) {
 			string = string + " ";
 	}
 	string += "\n";
-};
+}
 console.log(string);
